@@ -72,7 +72,7 @@ jobs:
       - run:
           name: Pull test models
           environment:
-            USE_HOST_DEPS: 1
+            USE_HOST_DEPS: "1"
           command: | 
             nox -s download_test_models
       
