@@ -42,7 +42,7 @@ jobs:
             sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/${OS}/x86_64/ /"
             sudo apt-get update
              
-            sudo apt-get install libnvinfer8=${TRT_PKG_NAME} libnvonnxparsers8=${TRT_PKG_NAME} libnvparsers8=${TRT_PKG_NAME} libnvinfer-plugin8=${TRT_PKG_NAME} libnvinfer-dev=${TRT_PKG_NAME} libnvonnxparsers-dev=${TRT_PKG_NAME} libnvparsers-dev=${TRT_PKG_NAME} libnvinfer-plugin-dev=${TRT_VERSION} python3-libnvinfer=${TRT_VERSION}
+            sudo apt-get install libnvinfer8=${TRT_PKG_NAME} libnvinfer-plugin8=${TRT_PKG_NAME} libnvinfer-dev=${TRT_PKG_NAME} libnvinfer-plugin-dev=${TRT_VERSION}
             # check available version, apt list libnvinfer8 -a
             sudo wget -q https://github.com/bazelbuild/bazel/releases/download/${BAZEL_VERSION}/bazel-${BAZEL_VERSION}-linux-x86_64 -O /usr/bin/bazel
             sudo chmod a+x /usr/bin/bazel
