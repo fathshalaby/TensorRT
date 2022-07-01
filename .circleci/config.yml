@@ -63,6 +63,11 @@ jobs:
             # install fx2trt
             # cd py/torch_tensorrt/fx/setup
             # python3 setup.py install
+            
+      - run:
+          name: GPU Config
+          command: |
+            nvidia-smi
       
       - run:
           name: Pull test models
