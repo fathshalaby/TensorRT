@@ -70,6 +70,11 @@ jobs:
             nvidia-smi
       
       - run:
+          name: Test torch
+          command: |
+            python3 -c "import torch; print(torch.cuda.is_available()); print(torch.cuda.device_count())"
+
+      - run:
           name: Pull test models
           environment:
             USE_HOST_DEPS: "1"
