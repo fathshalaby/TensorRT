@@ -71,9 +71,10 @@ jobs:
       
       - run:
           name: Pull test models
+          environment:
+            USE_HOST_DEPS: 1
           command: | 
-            cd tests/modules
-            python3 hub.py
+            nox -s download_test_models
       
       - run:
           name: Run core / C++ tests
