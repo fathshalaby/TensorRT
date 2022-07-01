@@ -53,7 +53,7 @@ jobs:
             pip3 install nvidia-pyindex
             pip3 install nvidia-tensorrt==${TRT_VERSION_LONG}
             #pip3 install --pre torch==${TORCH_BUILD}  torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cu113
-            pip3 install torch==${TORCH_BUILD} torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+            pip3 install torch==${TORCH_BUILD} torchvision torchaudio timm --extra-index-url https://download.pytorch.org/whl/cu113
             pip3 install pytest parameterized expecttest nox
             # install torch_tensorrt
             mv WORKSPACE.ci WORKSPACE
