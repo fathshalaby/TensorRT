@@ -9,10 +9,10 @@ jobs:
     environment: 
       CUDNN_VERSION: "8.2.1"
       TRT_VERSION: "8.2.4"
-      TRT_VERSION_LONG: "${TRT_VERSION}.2"
+      TRT_VERSION_LONG: "8.2.4.2"
       BAZEL_VERSION: "5.1.1"
-      CUDNN_PKG_NAME: "${CUDNN_VERSION}.*-1+cuda11.3"
-      TRT_PKG_NAME: "${TRT_VERSION}-1.cuda11.4"
+      CUDNN_PKG_NAME: "8.2.1.*-1+cuda11.3"
+      TRT_PKG_NAME: "8.2.4-1.cuda11.4"
       TORCH_BUILD: "1.11.0+cu113"
       OS: "ubuntu2004"
     machine:
